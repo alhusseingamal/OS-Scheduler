@@ -13,10 +13,10 @@ These include: Message Queues, Shared Memory and Semaphores.
 6. ### Round Robin (RR)
 
 ## Implementation Notes
-1. Three scheduling algorithms are implemented: HPF, SRTN, and RR.
+1. Only three scheduling algorithms are implemented as standalone algorithms: HPF, SRTN, and RR.
 2. For HPF, it is either preemptive or non-preemptive depending on a simple boolean condition.
 3. FCFS is realized by using Non-preemptive HPF and setting the priority criteria to the arrival time.
-4. SJF is a non-preemptive version of SRTN
+4. SJF is a non-preemptive version of SRTN.
 
 ## Memory Managment
 Memory is managed using the Buddy Allocation Memory Allocation Method, implemented using a binary tree.  
