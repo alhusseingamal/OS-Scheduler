@@ -74,6 +74,11 @@ Variable naming is descriptive, and as such comments were often omitted to avoid
 2. Linux Environment: Linux Machine, VM, WSL, or else
 
 ## How to run the code?
-1. Download the file and extract it
-2. Open your linux shell or a new project in Vscode editor, whichever you are using.
-3. Type the two commands: "make" followed by "make run"
+1. Download the file and extract it.
+2. Open your linux shell or a new project your WSL editor, or whichever you are using.
+3. Type those two commands in the shell: "make" followed by "make run".
+### More Importantly  
+4. If you need a pure scheduler with no regard to memory (infinite memory), either set your memory entries to 0 or make the max memory size sufficiently large.
+5. If needed, upload your testcases to the file "processes.txt".
+6. Alternatively, you an use the test_generator to generate a random testcase for you.
+6. You can play with the max memory size, max process size, etc... by editing them in the memory variables section in the memory file7
