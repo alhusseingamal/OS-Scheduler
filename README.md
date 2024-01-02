@@ -56,10 +56,13 @@ Information includes allocated bytes for each process, timestamps for allocation
 A Priority Queue is used to implement all the algorithms.  
 To achieve the queue behavior where needed, the priority queue is utilized with all its elements having the same priority.
 
+## Coding Style
+The code exhibits a decent degree of modularity, with blocks
+
 ## Requirements to run the code
 1. GCC Compiler
 2. Linux Environment: Linux Machine, VM, WSL, or else
-3. 
+
 ## How to run the code?
 1. Download the file and extract it
 2. Open your linux shell or a new project in Vscode editor, whichever you are using.
