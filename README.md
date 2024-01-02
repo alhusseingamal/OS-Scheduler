@@ -86,4 +86,4 @@ Variable naming is descriptive, and as such comments were often omitted to avoid
 6. Alternatively, you an use the test_generator to generate a random testcase for you.
 6. You can play with the max memory size, max process size, etc... by editing them in the memory variables section in the memory file
 
-### Sample run testcases are shown in the "screenshots" section.
+#### Some testcases are provided under the "testcases" section. Sample testcases are shown in the "screenshots" section.
