@@ -1,16 +1,16 @@
 # OS-Scheduler  
 A CPU Process Schduler with a Memory Managment Unit
-It supports 6 scheduling algorithms in addition to memory managment using Buddy Allocation Algorithm.
+It supports 6 scheduling algorithms in addition to memory managment using Buddy Allocation Algorithm.  
 System Signals and Inter-Process Communication (IPC) Methods are used for synchronization and coordination between the processes in the system.  
 These include: Message Queues, Shared Memory and Semaphores.
 
 ## Scheduling Algorithms
-1. First Come First Serve FCFS
-2. Non-preemptive Highest priority First (HPF)
-3. Preemptive Highest priority First (HPF)
-4. Shortest Job First (SJF)
-5. Shortest Remaining Time Next (SRTN)
-6. Round Robin (RR)
+1. ### First Come First Serve FCFS
+2. ### Non-preemptive Highest priority First (HPF)
+3. ### Preemptive Highest priority First (HPF)
+4. ### Shortest Job First (SJF)
+5. ### Shortest Remaining Time Next (SRTN)
+6. ### Round Robin (RR)
 
 ## Memory Managment
 Memory is managed using the Buddy Allocation Memory Allocation Method, implemented using a binary tree.
@@ -32,23 +32,19 @@ The operational dynamics of the project rely on input and output files to emulat
 ### Input File: 
 
 #### processes.txt
-
 The input  source, with each non-comment line representing a distinct process. Fields detail information such as ID, arrival time, runtime, priority, and memory size.
 
 ### Output Files:
 
 #### scheduler.log
-
 The scheduler.log file meticulously records the scheduler's activities and the evolving states of processes at various time points.  
 Entries encompass crucial details like process initiation, termination, resumption, and completion times, along with process-specific particulars.
 
 #### scheduler.perf
-
 Contained within the scheduler.perf file are comprehensive performance metrics gauging the scheduler's efficiency.  
 This includes statistics on CPU utilization, average waiting time, average weighted turnaround time, and the standard deviation for average weighted turnaround time.
 
 #### memory.log
-
 The memory.log file keeps a detailed log of memory allocation and deallocation events.  
 Information includes allocated bytes for each process, timestamps for allocation and deallocation, and the corresponding process ID.
 
@@ -57,7 +53,7 @@ A Priority Queue is used to implement all the algorithms.
 To achieve the queue behavior where needed, the priority queue is utilized with all its elements having the same priority.
 
 ## Coding Style
-The code exhibits a decent degree of modularity, with blocks
+The code exhibits a high degree of extensbility and modularity, with blocks being re-used and shared across different algorithms.  
 
 ## Requirements to run the code
 1. GCC Compiler
