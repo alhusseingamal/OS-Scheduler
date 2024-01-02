@@ -12,8 +12,19 @@ These include: Message Queues, Shared Memory and Semaphores.
 5. ### Shortest Remaining Time Next (SRTN)
 6. ### Round Robin (RR)
 
+## Implementation Notes
+1. Three scheduling algorithms are implemented: HPF, SRTN, and RR.
+2. For HPF, it is either preemptive or non-preemptive depending on a simple boolean condition.
+3. FCFS is realized by using Non-preemptive HPF and setting the priority criteria to the arrival time.
+4. SJF is a non-preemptive version of SRTN
+
 ## Memory Managment
-Memory is managed using the Buddy Allocation Memory Allocation Method, implemented using a binary tree.
+Memory is managed using the Buddy Allocation Memory Allocation Method, implemented using a binary tree.  
+
+### Important Notes regarding Memory  
+1. The memory unit is an emulation for what would happen in a real system.
+2. The total memory size is assumed to be 1024 bytes. You can modify this in the memory variables section in the memory files.
+3. Since the size of meta data is usually much smaller than the size of the actual process, meta data was ignored here. It can be accounted for easily though.
 
 ## System Description
 
@@ -46,7 +57,8 @@ This includes statistics on CPU utilization, average waiting time, average weigh
 
 #### memory.log
 The memory.log file keeps a detailed log of memory allocation and deallocation events.  
-Information includes allocated bytes for each process, timestamps for allocation and deallocation, and the corresponding process ID.
+Information includes allocated bytes for each process, timestamps for allocation and deallocation, and the corresponding process ID.  
+Zero Memory processes have no footprint on the memory log.
 
 ## Data Structures Used
 A Priority Queue is used to implement all the algorithms.  
@@ -54,6 +66,8 @@ To achieve the queue behavior where needed, the priority queue is utilized with 
 
 ## Coding Style
 The code exhibits a high degree of extensbility and modularity, with blocks being re-used and shared across different algorithms.  
+At a few times, the code could have been shortened, but it was left that way for clarity and portability.  
+Variable naming is descriptive, and as such comments were often omitted to avoid condensing the code with unnecessary comments.
 
 ## Requirements to run the code
 1. GCC Compiler
