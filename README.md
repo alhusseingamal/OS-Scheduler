@@ -23,10 +23,11 @@ Memory is managed using the Buddy Allocation Memory Allocation Method, implement
 
 ### Important Notes regarding Memory  
 1. The memory unit is an emulation for what would happen in a real system.
-2. The total memory size is assumed to be 1024 bytes. You can modify this in the memory variables section in the memory files.
-3. Since the size of meta data is usually much smaller than the size of the actual process, meta data was ignored here. It can be accounted for easily though.
-4. It is assumed that the memory allocated for a process remains constant during its time in the system.
-5. The system has a single uni-core CPU.
+2. The total memory size is assumed to be 1024 bytes and the max process size is 256 bytes.
+   You can modify this in the memory variables section in the memory files.
+4. Since the size of meta data is usually much smaller than the size of the actual process, meta data was ignored here. It can be accounted for easily though.
+5. It is assumed that the memory allocated for a process remains constant during its time in the system.
+6. The system has a single uni-core CPU.
 
 ## System Description
 
