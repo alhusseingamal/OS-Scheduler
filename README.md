@@ -84,4 +84,6 @@ Variable naming is descriptive, and as such comments were often omitted to avoid
 4. If you need a pure scheduler with no regard to memory (infinite memory), either set your memory entries to 0 or make the max memory size sufficiently large.
 5. If needed, upload your testcases to the file "processes.txt".
 6. Alternatively, you an use the test_generator to generate a random testcase for you.
-6. You can play with the max memory size, max process size, etc... by editing them in the memory variables section in the memory file7
+6. You can play with the max memory size, max process size, etc... by editing them in the memory variables section in the memory file
+
+### Sample run testcases are shown in the "screenshots" section.
