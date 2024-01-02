@@ -1,10 +1,8 @@
 # OS-Scheduler  
 A CPU Process Schduler with a Memory Managment Unit
 It supports 6 scheduling algorithms in addition to memory managment using Buddy Allocation Algorithm.
-
-## Requirements to run the code
-1. GCC Compiler
-2. Linux Environment: Linux Machine, VM, WSL, or else
+System Signals and Inter-Process Communication (IPC) Methods are used for synchronization and coordination between the processes in the system.  
+These include: Message Queues, Shared Memory and Semaphores.
 
 ## Scheduling Algorithms
 1. First Come First Serve FCFS
@@ -31,7 +29,9 @@ Upon completion, a process notifies the scheduler to facilitate termination and 
 ## Input/Output Handling:
 The operational dynamics of the project rely on input and output files to emulate and assess the design of the operating system. The specified files encompass:
 
-### Input File: processes.txt
+### Input File: 
+
+#### processes.txt
 
 The input  source, with each non-comment line representing a distinct process. Fields detail information such as ID, arrival time, runtime, priority, and memory size.
 
@@ -47,20 +47,20 @@ Entries encompass crucial details like process initiation, termination, resumpti
 Contained within the scheduler.perf file are comprehensive performance metrics gauging the scheduler's efficiency.  
 This includes statistics on CPU utilization, average waiting time, average weighted turnaround time, and the standard deviation for average weighted turnaround time.
 
-##### memory.log
+#### memory.log
 
 The memory.log file keeps a detailed log of memory allocation and deallocation events.  
 Information includes allocated bytes for each process, timestamps for allocation and deallocation, and the corresponding process ID.
 
-
 ## Data Structures Used
 A Priority Queue is used to implement all the algorithms.  
-To achieve the queue behavior where needed, the priority queue is utilized with all its elements(processes) having a UNIFIED_PRIORITY.
+To achieve the queue behavior where needed, the priority queue is utilized with all its elements having the same priority.
 
+## Requirements to run the code
+1. GCC Compiler
+2. Linux Environment: Linux Machine, VM, WSL, or else
+3. 
 ## How to run the code?
 1. Download the file and extract it
 2. Open your linux shell or a new project in Vscode editor, whichever you are using.
 3. Type the two commands: "make" followed by "make run"
-
-## Notes
-System Signals and Inter-Process Communication Methods (Message Queues, Shared Memory and Semaphores) are used for synchronization and coordination between the processes in the system.
