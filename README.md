@@ -1,7 +1,7 @@
 # OS-Scheduler  
 A CPU Process Schduler with a Memory Managment Unit  
 It supports 6 scheduling algorithms in addition to memory managment using Buddy Allocation Algorithm.    
-System Signals and Inter-Process Communication (IPC) Methods are used for synchronization and coordination between the processes in the system.    
+System signals and interprocess communication(IPC) Methods are used for synchronization and coordination between the processes in the system.   
 These include: Message Queues, Shared Memory and Semaphores.
 
 ## Scheduling Algorithms
@@ -27,7 +27,7 @@ Memory is managed using the Buddy Allocation Memory Allocation Method, implement
    You can modify this in the memory variables section inside the memory file.
 4. Since the size of meta data is usually much smaller than the size of the actual process, meta data was ignored here. It can be accounted for easily though.
 5. It is assumed that the memory allocated for a process remains constant during its time in the system.
-6. The system has a single uni-core CPU.
+6. It is assumed that the system has a single uni-core CPU.
 
 ## System Description
 
