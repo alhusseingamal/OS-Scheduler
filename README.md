@@ -45,6 +45,7 @@ Upon completion, a process notifies the scheduler to facilitate termination and 
 
 ## System Block Diagram  
 Here is a view of the system:
+
 ![System Block Diagram](https://github.com/alhusseingamal/OS-Scheduler/blob/main/screenshots/System%20Diagram.PNG)
 
 
