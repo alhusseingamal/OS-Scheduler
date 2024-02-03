@@ -7,12 +7,6 @@ It supports 6 scheduling algorithms in addition to memory managment using Buddy 
 System signals and interprocess communication (IPC) Methods are used for synchronization and coordination between the processes in the system.  
 These include: Message Queues, Shared Memory and Semaphores.
 
-A common clock is shared between all constructs in the system.
-
-## System Block Diagram  
-Here is a view of the system, excluding the memory managment unit:
-![System Block Diagram](https://github.com/alhusseingamal/OS-Scheduler/blob/main/screenshots/System%20Diagram.PNG)
-
 ## Scheduling Algorithms
 1. ### First Come First Serve FCFS
 2. ### Non-preemptive Highest priority First (HPF)
@@ -40,7 +34,7 @@ Memory is managed using the Buddy Allocation Memory Allocation Method, implement
 
 ## System Description
 
-Clock: Serves as a virtual integer time clock within the system. Its primary functions include simulation purposes and facilitating IPC.
+Clock: A shared clock that serves as a virtual integer time clock within the system. Its primary functions include simulation purposes and facilitating IPC.
 
 Process Generation Module: Responsible for generating processes, reading input files, initializing the scheduler, and creating the clock process.  
 
@@ -48,6 +42,11 @@ Scheduler: Responsible for managing processes and their states. It implements di
 
 Process: Each process in the system functions as a CPU-bound entity, carrying out computational tasks.  
 Upon completion, a process notifies the scheduler to facilitate termination and efficient resource allocation.
+
+## System Block Diagram  
+Here is a view of the system:
+![System Block Diagram](https://github.com/alhusseingamal/OS-Scheduler/blob/main/screenshots/System%20Diagram.PNG)
+
 
 ## Input/Output Handling:
 The operational dynamics of the project rely on input and output files to emulate and assess the design of the operating system. The specified files encompass:
