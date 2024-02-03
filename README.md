@@ -11,7 +11,7 @@ A common clock is shared between all constructs in the system.
 
 ## System Block Diagram  
 Here is a view of the system, excluding the memory managment unit:
-![System Block Diagram]()
+![System Block Diagram](https://github.com/alhusseingamal/OS-Scheduler/blob/main/screenshots/System%20Diagram.PNG)
 
 ## Scheduling Algorithms
 1. ### First Come First Serve FCFS
