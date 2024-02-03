@@ -7,6 +7,12 @@ It supports 6 scheduling algorithms in addition to memory managment using Buddy 
 System signals and interprocess communication (IPC) Methods are used for synchronization and coordination between the processes in the system.  
 These include: Message Queues, Shared Memory and Semaphores.
 
+A common clock is shared between all constructs in the system.
+
+## System Block Diagram  
+Here is a view of the system, excluding the memory managment unit:
+![System Block Diagram]()
+
 ## Scheduling Algorithms
 1. ### First Come First Serve FCFS
 2. ### Non-preemptive Highest priority First (HPF)
