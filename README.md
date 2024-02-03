@@ -97,4 +97,12 @@ Variable naming is descriptive, and as such comments were often omitted to avoid
 6. Alternatively, you an use the test_generator to generate a random testcase for you. use the command "./test_generator.out".
 6. You can play with the max memory size, max process size, etc... by editing them in the memory variables section in the memory file
 
-#### Some testcases are provided under the "testcases" section. Sample runs of the testcases are shown in the "screenshots" section.
+## Sample Runs
+### User Prompt
+![User Prompt](https://github.com/alhusseingamal/OS-Scheduler/blob/main/screenshots/user%20prompt.png)
+
+### 1 - Round Robin (RR) with Q = 10
+![RR with Q = 10](https://github.com/alhusseingamal/OS-Scheduler/blob/main/screenshots/RR%20Q%20%3D%2010.png)
+
+### 2 - Non-preemptive HPF
+![Non-preemptive HPF](https://github.com/alhusseingamal/OS-Scheduler/blob/main/screenshots/Non-preemptive%20HPF.png)
